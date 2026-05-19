@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 도서관</title>
+    <!-- meta -->
+    <meta name="description" content="서울도서관">
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:image" content="img/thumbnail.jpg">
+    <meta property="og:type" content="website">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- css -->
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- js -->
+     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="#">
+                <div class="logoimg">
+                    <img src="img/logo.png" alt="서울도서관 로고">
+                </div>
+                <div class="logoimg light">
+                    <img src="img/logodark.png" alt="서울도서관 로고">
+                </div>
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li class="mainnav">
+                    <a href="#">자료검색</a>
+                    <ul>
+                        <li>
+                            <a href="#">소장자료</a>
+                        </li>
+                        <li>
+                            <a href="#">서울자료</a>
+                        </li>
+                        <li>
+                            <a href="#">책책책!</a>
+                        </li>
+                        <li>
+                            <a href="#">지식문화콘텐츠</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainnav">
+                    <a href="#">전자도서관</a>
+                    <ul>
+                        <li>
+                            <a href="#">전자도서관</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainnav">
+                    <a href="#">도서관 이용</a>
+                    <ul>
+                        <li>
+                            <a href="#">이용안내</a>
+                        </li>
+                        <li>
+                            <a href="#">자료실 안내</a>
+                        </li>
+                        <li>
+                            <a href="#">전시프로그램 안내</a>
+                        </li>
+                        <li>
+                            <a href="#">함꼐하는 서비스</a>
+                        </li>
+                        <li>
+                            <a href="#">도서관 소개</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainnav">
+                    <a href="#">신청 및 소식</a>
+                    <ul>
+                        <li>
+                            <a href="#">신청</a>
+                        </li>
+                        <li>
+                            <a href="#">참여</a>
+                        </li>
+                        <li>
+                            <a href="#">도서관 소식</a>
+                        </li>
+                        <li>
+                            <a href="#">정책정보서비스</a>
+                        </li>
+                        <li>
+                            <a href="#">도서관 서비스</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainnav">
+                    <a href="#">독서문화정책</a>
+                    <ul>
+                        <li>
+                            <a href="#">정책비전체계</a>
+                        </li>
+                        <li>
+                            <a href="#">지역도서관 지원·협력</a>
+                        </li>
+                        <li>
+                            <a href="#">정책 개발·운영</a>
+                        </li>
+                        <li>
+                            <a href="#">협력 네트워크</a>
+                        </li>
+                        <li>
+                            <a href="#">서울의 도서관</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="login">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">나의공간</a></li>
+                <li><a href="#">비대면 자격확인</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="mobilenav">
+        <a href="#" class="mobilelogo">
+            <div class="logoimg">
+                <img src="img/logo.png" alt="서울도서관 로고">
+            </div>
+            <div class="logoimg light">
+                <img src="img/logodark.png" alt="서울도서관 로고">
+            </div>
+        </a>
+        <div class="mobilebtn">
+            <a href="#">
+                <span></span>
+                <span class="second"></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <div class="mobilemenu">
+        <ul>
+            <li>
+                <a href="#">자료검색</a>
+            </li>
+            <li>
+                <a href="#">전자도서관</a>
+            </li>
+            <li>
+                <a href="#">도서관 이용</a>
+            </li>
+            <li>
+                <a href="#">신청 및 소식</a>
+            </li>
+            <li>
+                <a href="#">독서문화정책</a>
+            </li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section section1 dark">
+            <div class="content">
+                <h1 class="title">SEOUL LIBRARY</h1>
+                <div class="search">
+                    <div class="search_title">
+                        <p>통합검색</p>
+                    </div>
+                    <form class="search-box" action="#">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button type="submit">
+                            <span class="material-symbols-rounded">
+                                search
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="calander">
+                <div class="datebox">
+                    <span class="date"></span>
+                </div>
+                <span class="open">개관</span>
+                <div class="today">
+                    <span>오늘의 일정</span>
+                    <span class="todaytitle">
+                        <a href="#">초급 한국 수어 회화 「손으로 말해요」</a>
+                    </span>
+                </div>
+            </div>
+            <div class="downbtn">
+                <a href="#">
+                    <span class="material-symbols-rounded">
+                        keyboard_arrow_down
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="section section2 light">
+                <div class="section-eyebrow">📌notice</div>
+                <h2 class="section-title">도서관 소식</h2>
+                <div class="notice">
+                    <div class="notice-content">
+                        <p>공지사항</p>
+                        <ul class="noticelist">
+                            <li><a href="#">서울도서관 5월 휴관 안내</a></li>
+                            <li><a href="#">2026 움직이는 서울형책방 1회 : 비플랫폼</a></li>
+                            <li><a href="#">2026년 서울야외도서관이 돌아옵니다</a></li>
+                            <li><a href="#">2026년 국외 구독형 전자책 신규 목록 입고 안내</a></li>
+                            <li><a href="#">2026년 국외 구독형 전자책 신규 목록 입고 안내</a></li>
+                            <li><a href="#">전자책 시스템 작업 안내(4. 7.(화) 14:00~16:00)</a></li>
+                            <li><a href="#">시민참여 북큐레이션 선정 결과 발표</a></li>
+                        </ul>
+                    </div>
+                    <div class="notice-content">
+                        <p>보도자료</p>
+                        <ul class="noticelist">
+                            <li><a href="#">서울시, 동네서점 70곳 ‘서울형책방’ 선정…생활밀착 독서문화 확산</a></li>
+                            <li><a href="#">책과 함께하는 봄…서울도서관, ‘도서관주간’ 문화행사 풍성</a></li>
+                            <li><a href="#">전국 도서관 책 빌려보는 `책바다 서비스`, 서울도서관과 함께 더 쉽고 저렴하게!</a></li>
+                            <li><a href="#">독서의 힘 중요해진 AI 시대… 서울도서관, AI 특사 캠페인「다시, 도서관」운영</a></li>
+                            <li><a href="#">서울야외도서관, 이제 세계와 함께 읽는다…오는 23일 개장</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottombtn">
+                    <ul>
+                        <li><a href="#">전자책ㆍ오디오북</a></li>
+                        <li><a href="#">스마트도서관</a></li>
+                        <li><a href="#">회원증발급</a></li>
+                        <li><a href="#">희망도서신청</a></li>
+                        <li><a href="#">프로그램신청</a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="section section3 light">
+            <div class="curation-wrap">
+                <div class="section-eyebrow">&#128218; Book Curation</div>
+                <h2 class="section-title">사서가 추천하는 이달의 책</h2>
+                <div class="tabs">
+                <button class="tab-btn active" onclick="setTab(this,'monthly')">이달의 추천</button>
+                <button class="tab-btn" onclick="setTab(this,'season')">계절 추천</button>
+                <button class="tab-btn" onclick="setTab(this,'topic')">주제별 모음</button>
+                <button class="tab-btn" onclick="setTab(this,'new')">신착 도서</button>
+                </div>
+                <div class="books-grid" id="booksGrid"></div>
+                <div class="cta-area">
+                <a href="#" class="cta-btn">전체 추천 도서 보기 &rarr;</a>
+                </div>
+            </div>
+            </div>
+        <div class="section section4 light">
+            <div class="inner">
+                <div class="section-eyebrow">📖culture</div>
+                <h2 class="section-title">독서문화</h2>
+                <div class="culture">
+                    <a href="#" class="culture_content">
+                        <span class="culturebadge">프로그램 신청</span>
+                        <p class="culturetitle">2026 움직이는 서울형책방 1회 : 비플랫폼</p>
+                        <ul>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    calendar_today
+                                </span>
+                                <p>2026.05.04 ~ 2026.05. 12</p>
+                            </li>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    account_circle
+                                </span>
+                                <p>초등학생 이상 / 모집정원: 30명</p>
+                            </li>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    distance
+                                </span>
+                                <p>광화문 라운지 (광화문역 9번 출구)</p>
+                            </li>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    check_circle
+                                </span>
+                                <p>사전신청 / 공석 발생 시 현장 접수 가능</p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="culture_content">
+                        <span class="culturebadge">프로그램 신청</span>
+                        <p class="culturetitle">[월간 북돋움]0~24개월 잘 자는 아이의 비결</p>
+                        <ul>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    calendar_today
+                                </span>
+                                <p>2026.04.29  ~ 2026.05.18</p>
+                            </li>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    account_circle
+                                </span>
+                                <p>임산부 또는 영유아 양육자</p>
+                            </li>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    distance
+                                </span>
+                                <p>온라인(Zoom)</p>
+                            </li>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    check_circle
+                                </span>
+                                <p>사전신청</p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="culture_content">
+                        <span class="culturebadge red">추천도서 서가</span>
+                        <p class="culturetitle">[책피는 서울도서관] 온전히, 닿는 마음</p>
+                        <ul>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    calendar_today
+                                </span>
+                                <p>2026.04.01 ~ 2026.04. 30</p>
+                            </li>
+                            <li>
+                                <span class="material-symbols-rounded">
+                                    distance
+                                </span>
+                                <p>서울도서관 일반자료실 2층</p>
+                            </li>
+                        </ul>
+                    </a>
+                    
+                </div>
+            </div>
+            <footer>
+                <div class="footerleft">
+                    <ul class="terms">
+                        <li><a href="#">이용약관</a></li>
+                        <li class="privacy"><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">저작권보호정책</a></li>
+                    </ul>
+                    <ul class="location">
+                        <li>서울특별시 중구 세종대로 110</li>
+                        <li>전화번호: 02-120, 02-2133-0300, 02-2133-0301</li>
+                        <li>이용시간: 화~금 09:00~21:00 / 토, 일 09:00~18:00 / 월요일, 공휴일 휴관</li>
+                    </ul>
+                    <p><p>&copy; 2026 SEOUL LIBRARY. All Rights Reserved.</p></p>
+                </div>
+                <div class="footerright">
+                    <form>
+                        <select name="website">
+                            <option>서울시홈페이지</option>
+                            <option>서울시 평생학습포털</option>
+                            <option>서울시 발간 원문</option>
+                            <option>서울시보</option>
+                            <option>서울연구원</option>
+                        </select>
+                    </form>
+                    <form>
+                        <select name="libwebsite">
+                            <option>도서관 홈페이지</option>
+                            <option>국립중앙도서관</option>
+                            <option>국회도서관</option>
+                            <option>서울시의회 전문도서관</option>
+                            <option>서울의 도서관 찾기</option>
+                        </select>
+                    </form>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="upbtn">
+        <a href="#">
+            <span class="material-symbols-rounded">
+                keyboard_arrow_up
+            </span>
+        </a>
+    </div>
+</body>
+</html>

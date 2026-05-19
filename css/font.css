@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "logofont";
+    src: url("../fonts/Paperlogy-6SemiBold.ttf") format(truetype);
+}
+@font-face {
+    font-family: "krfont";
+    src: url("../fonts/NotoSansKR-VariableFont_wght.ttf") format(truetype);
+}
+@font-face {
+    font-family: "enfont";
+    src: url("../fonts/NotoSans-VariableFont_wdth\,wght.ttf") format(truetype);
+}
