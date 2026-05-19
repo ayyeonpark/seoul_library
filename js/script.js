@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     $('#fullpage').fullpage({
+        responsiveWidth: 480,
         scrollOverflow: true,
         navigation: true,
         scrollingSpeed: 1000,
@@ -41,7 +42,7 @@ $(document).ready(function () {
         }
 
     });
-
+    
     const dateEl = document.querySelector(".date");
 
     const today = new Date();

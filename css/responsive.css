@@ -1,4 +1,8 @@
-/* header */
+@charset "utf-8";
+
+/* ============================================================
+   header
+   ============================================================ */
 @media (max-width: 1280px) {
     header {
         height: 75px;
@@ -113,18 +117,10 @@
         font-size: 9px;
     }
 }
-@media (max-width: 480px) {
-    header {
-        display: none;
-    }
-    .mobilenav {
-        display: flex;
 
-    }
-
-}
-
-/* section1 */
+/* ============================================================
+   section1
+   ============================================================ */
 @media (max-width: 1280px) {
     .content {
         flex-direction: column;
@@ -176,40 +172,13 @@
         right: 0px !important;
     }
 }
-@media (max-width: 480px) {
-    .title {
-        font-size: 40px;
-    }
-    .search {
-        width: 320px;
-        height: 50px;
-    }
-    .search p {
-        padding-left: 10px;
-        line-height: 50px;
-    }
-    .search-box {
-        width: 250px;
-        height: 50px;
-    }
-    .search-box input {
-        padding: 0 20px;
-        font-size: 15px;
-    }
-    .search-box button {
-        width: 50px;
-    }
-    .calander {
-        width: 300px;
-        height: 200px;
-        bottom: 80px;
-        font-size: 13px;
-    }
-}
-/* section2 */
+
+/* ============================================================
+   section2
+   ============================================================ */
 @media (max-width: 980px) {
     .section2 {
-        max-width: 900px; 
+        max-width: 900px;
     }
     .notice-content {
         width: 350px;
@@ -254,142 +223,10 @@
         height: 60px;
     }
 }
-@media (max-width: 480px) {
-    .section2 {
-        max-width: 380px;
-    }
-    .notice-content {
-        width: 350px;
-        height: 200px;
-    }
-    .bottombtn ul {
-        flex-wrap: wrap;
-    }
-    .bottombtn ul li {
-        width: 100px;
-        height: 50px;
-    }
-    .bottombtn ul li a {
-    }
-}
-/* section3 */
-@media (max-width: 480px) {
-    .section3 {
-      max-width: 100%;
-    }
-  
-    .curation-wrap {
-      padding: 60px 20px 40px;
-    }
-  
-    .section-eyebrow {
-      font-size: 11px;
-      max-width: 100%;
-    }
-  
-    .section-title {
-      font-size: 22px;
-      margin-bottom: 24px;
-      max-width: 100%;
-    }
-  
-    .tabs {
-      gap: 6px;
-      margin-bottom: 24px;
-      max-width: 100%;
-    }
-  
-    .tab-btn {
-      padding: 7px 14px;
-      font-size: 12px;
-    }
-  
-    .books-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      max-width: 100%;
-    }
-  
-    .book-card {
-      border-radius: 16px;
-      padding: 10px 10px 8px;
-      gap: 6px;
-    }
-  
-    .cover-title {
-      font-size: 12px;
-    }
-  
-    .cover-author {
-      font-size: 9px;
-    }
-  
-    .book-title {
-      font-size: 12px;
-    }
-  
-    .book-author {
-      font-size: 11px;
-    }
-  
-    .book-comment {
-      font-size: 11px;
-    }
-  
-    .genre-tag {
-      font-size: 10px;
-      padding: 2px 6px;
-    }
-  
-    .more-link {
-      font-size: 10px;
-    }
-  
-    .cta-btn {
-      padding: 12px 24px;
-      font-size: 13px;
-    }
-  }
-/* section4 */
-@media (max-width: 480px) {
-    .section4 {
-        padding-top: 50px;
-    }
 
-    .section4 .inner {
-        width: 100%;
-        padding: 0 16px;
-    }
-    .culture {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-    .culture_content .culturetitle {
-        font-size: 15px;
-        overflow: visible;
-    }
-    .culture_content li p {
-        font-size: 14px;
-    }
-    .culture_content:last-child {
-        display: none;
-       }
-
-}
-/* @media (max-width: 480px) {
-    .section4 .inner {
-        max-width: 330px;
-    }
-    .culture_content {
-        width: 300px;
-        height: 200px;
-   }
-   .culture_content:last-child {
-    display: none;
-   }
-} */
-/* footer */
+/* ============================================================
+   footer
+   ============================================================ */
 @media (max-width: 1280px) {
     footer {
         padding: 15px 30px;
@@ -402,4 +239,358 @@
         font-size: 11px;
         flex-direction: column;
     }
+}
+
+/* ============================================================
+   mobile  ( ~ 480px )
+   fullPage.js 해제 + 일반 세로 스크롤 전환
+   ============================================================ */
+@media (max-width: 480px) {
+
+    /* fullPage.js 강제 해제 */
+    html,
+    body {
+        overflow: auto !important;
+        height: auto !important;
+    }
+
+    #fullpage {
+        transform: none !important;
+        transition: none !important;
+        height: auto !important;
+        position: relative !important;
+        top: auto !important;
+    }
+
+    .section,
+    .fp-section {
+        height: auto !important;
+        min-height: 100svh;
+        position: relative !important;
+        transform: none !important;
+        top: auto !important;
+        left: auto !important;
+    }
+
+    .fp-tableCell {
+        display: block !important;
+        height: auto !important;
+        vertical-align: top !important;
+    }
+
+    /* header / 모바일 네비게이션 */
+    header {
+        display: none !important;
+    }
+
+    .mobilenav {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-bottom: 1px solid #dce3ef;
+        padding: 12px 16px;
+        height: 60px;
+        top: 0;
+    }
+
+    .mobilenav .logoimg {
+        width: 120px;
+    }
+
+    .mobilenav .logoimg.light {
+        display: none;
+    }
+
+    /* 섹션 공통 */
+    .section {
+        padding: 60px 16px 40px;
+    }
+
+    .section-eyebrow {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    /* section1 */
+    .section1 {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 80px 16px 30px;
+    }
+
+    .title {
+        font-size: 38px;
+        padding: 0;
+        white-space: normal;
+        word-break: break-all;
+        line-height: 1.1;
+        margin-bottom: 16px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .search {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 12px 16px;
+        gap: 10px;
+        margin-top: 0;
+        line-height: 1.5;
+    }
+
+    .search p {
+        padding-left: 0;
+        font-size: 13px;
+    }
+
+    .search-box {
+        width: 100%;
+        height: 46px;
+    }
+
+    .search-box input {
+        font-size: 15px;
+        padding: 0 14px;
+    }
+
+    .calander {
+        position: static;
+        width: 100%;
+        margin-top: 16px;
+        padding: 14px 16px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .today {
+        flex-direction: column;
+        gap: 6px;
+        white-space: normal;
+    }
+
+    .downbtn {
+        display: none;
+    }
+
+    /* section2 */
+    .section2 {
+        max-width: 100%;
+        min-height: auto;
+        height: auto !important;
+        padding: 60px 16px 50px;
+    }
+
+    .notice {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
+
+    .notice-content {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .noticelist li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .noticelist li a {
+        font-size: 15px;
+    }
+
+    .bottombtn {
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .bottombtn ul {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .bottombtn ul li {
+        width: calc(50% - 4px);
+        height: 64px;
+        border-radius: 14px;
+    }
+
+    .bottombtn ul li a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* section3 */
+    .section3 {
+        max-width: 100%;
+        min-height: auto;
+        padding: 60px 16px 40px;
+    }
+
+    .curation-wrap {
+        padding: 0;
+    }
+
+    .tabs {
+        gap: 6px;
+        margin-bottom: 20px;
+    }
+
+    .tab-btn {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .book-card {
+        border-radius: 16px;
+        padding: 10px 10px 8px;
+        gap: 6px;
+    }
+
+    .cover-title {
+        font-size: 12px;
+    }
+
+    .cover-author {
+        font-size: 9px;
+    }
+
+    .book-title {
+        font-size: 12px;
+    }
+
+    .book-author {
+        font-size: 11px;
+    }
+
+    .book-comment {
+        font-size: 11px;
+    }
+
+    .genre-tag {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    .more-link {
+        font-size: 10px;
+    }
+
+    .cta-btn {
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+
+    /* section4 */
+    .section4 {
+        min-height: auto;
+        height: auto !important;
+        padding: 60px 0 0;
+    }
+
+    .section4 .inner {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .culture {
+        flex-direction: column;
+        gap: 14px;
+        align-items: stretch;
+        padding: 0 0 24px;
+    }
+
+    .culture_content {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    .culture_content .culturetitle {
+        font-size: 15px;
+        white-space: normal;
+    }
+
+    .culture_content li p {
+        font-size: 14px;
+    }
+
+    .culture_content:last-child {
+        display: none;
+    }
+
+    /* footer */
+    footer {
+        position: static;
+        flex-direction: column;
+        padding: 24px 16px;
+        font-size: 12px;
+        gap: 16px;
+    }
+
+    .terms {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .location {
+        flex-direction: column;
+        gap: 6px;
+        padding: 8px 0;
+    }
+
+    .footerright {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 8px;
+    }
+
+    .footerright select {
+        width: 100%;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    /* upbtn */
+    .upbtn {
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .upbtn a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .upbtn .material-symbols-rounded {
+        font-size: 34px;
+    }
+
+    /* mobilemenu */
+    .mobilemenu.open {
+        padding-top: 60px;
+    }
+
 }
