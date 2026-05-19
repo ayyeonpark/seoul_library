@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-/* ============================================================
-   header
-   ============================================================ */
+/* header */
 @media (max-width: 1280px) {
     header {
         height: 75px;
@@ -118,9 +116,7 @@
     }
 }
 
-/* ============================================================
-   section1
-   ============================================================ */
+/* section1 */
 @media (max-width: 1280px) {
     .content {
         flex-direction: column;
@@ -173,9 +169,7 @@
     }
 }
 
-/* ============================================================
-   section2
-   ============================================================ */
+/* section2 */
 @media (max-width: 980px) {
     .section2 {
         max-width: 900px;
@@ -224,9 +218,7 @@
     }
 }
 
-/* ============================================================
-   footer
-   ============================================================ */
+/* footer */
 @media (max-width: 1280px) {
     footer {
         padding: 15px 30px;
@@ -241,13 +233,9 @@
     }
 }
 
-/* ============================================================
-   mobile  ( ~ 480px )
-   fullPage.js 해제 + 일반 세로 스크롤 전환
-   ============================================================ */
+/* mobile ( ~ 480px ) */
 @media (max-width: 480px) {
 
-    /* fullPage.js 강제 해제 */
     html,
     body {
         overflow: auto !important;
@@ -260,6 +248,7 @@
         height: auto !important;
         position: relative !important;
         top: auto !important;
+        overflow: visible !important;
     }
 
     .section,
@@ -270,15 +259,21 @@
         transform: none !important;
         top: auto !important;
         left: auto !important;
+        overflow: visible !important;
     }
 
     .fp-tableCell {
         display: block !important;
         height: auto !important;
         vertical-align: top !important;
+        overflow: visible !important;
     }
 
-    /* header / 모바일 네비게이션 */
+    .fp-slide {
+        overflow: visible !important;
+    }
+
+    /* header / mobilenav */
     header {
         display: none !important;
     }
@@ -301,7 +296,7 @@
         display: none;
     }
 
-    /* 섹션 공통 */
+    /* section */
     .section {
         padding: 60px 16px 40px;
     }
@@ -402,6 +397,7 @@
         width: 100%;
         height: auto;
         min-height: 200px;
+        overflow: visible;
     }
 
     .noticelist li {
@@ -441,6 +437,7 @@
         max-width: 100%;
         min-height: auto;
         padding: 60px 16px 40px;
+        overflow: visible;
     }
 
     .curation-wrap {
@@ -508,6 +505,7 @@
         min-height: auto;
         height: auto !important;
         padding: 60px 0 0;
+        overflow: visible;
     }
 
     .section4 .inner {
