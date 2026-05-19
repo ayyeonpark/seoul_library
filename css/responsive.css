@@ -359,7 +359,9 @@
         font-size: 15px;
         padding: 0 14px;
     }
-
+    .search-box button {
+        width: 46px;
+    }
     .calander {
         position: static;
         width: 100%;
